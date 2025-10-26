@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 
 type AtributosPersistidos = {
   token: string | undefined;
+  logeado: string | undefined;
   usuario: string | undefined;
+  permisos: string[] | undefined;
 };
 
 /**

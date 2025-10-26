@@ -1,7 +1,10 @@
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const axiosAPI = axios.create({ baseURL: "http://localhost:3000/api" });
+const axiosAPI = axios.create({
+  baseURL: "http://localhost:3000/api",
+  withCredentials: true,
+});
 
 axiosAPI.interceptors.response.use(
   (res) => res,
